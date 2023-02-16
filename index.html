@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WTR.FM</title>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://icono-49d6.kxcdn.com/icono.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="flex player-wrapper">
+        <div class="player-artist-details">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="62" fill="none"><path fill="#fff" fill-rule="evenodd" d="M17.527 0v61.285h2.836V0h-2.836ZM32.123 57.616V19.978h-2.837v37.638h2.837ZM23.404 9.787v50.65h2.836V9.787h-2.836ZM35.164 30.544v20.802H38V30.544h-2.836ZM8.712 57.616V19.978H5.876v37.638h2.836ZM11.752 9.787v50.65h2.837V9.787h-2.837ZM0 30.544v20.802h2.836V30.544H0Z" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="player-track-info">
+                <h2 class="player-track-name"></h2>
+                <h3 class="player-artist-name"></h3>
+                <div class="track-meta">
+                </div>
+            </div>
+            
+            <img class="water-player-artist-image" src="wtr_holiding_image.jpg">
+
+            <div class="audio-player">
+                <div class="timeline">
+                  <div class="progress"></div>
+                </div>
+                <div class="controls">
+                  <div class="play-container">
+                    <div class="toggle-play play">
+                  </div>
+                  </div>
+                  <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="divider">/</div>
+                    <div class="length"></div>
+                  </div>
+                  <div class="volume-container">
+                    <div class="volume-button">
+                      <div class="volume icono-volumeMedium"></div>
+                    </div>
+                    
+                    <div class="volume-slider">
+                      <div class="volume-percentage"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            
+            <!-- <div class="water-player">
+                <div class="water-player-scrubber">
+                    <div class="scrubber"></div>
+                </div>
+                <audio class="water-audio-player">
+                    <source class="water-track"></source>
+                </audio>
+                <div class="player-play-button">
+                    <svg class="play" xmlns="http://www.w3.org/2000/svg" width="28" height="35" fill="none"><path fill="#fff" fill-rule="evenodd" d="M0 0v34.379h2.614V0H0ZM4.896 2.082v30.216H7.51V2.082H4.896ZM9.795 5.095v24.19h2.613V5.095H9.795ZM14.694 8.29v17.798h2.613V8.29h-2.613ZM19.59 11.486v11.408h2.613V11.486H19.59ZM24.488 13.404v7.573h2.614v-7.573h-2.614Z" clip-rule="evenodd"/></svg>
+                    <svg class="pause none" xmlns="http://www.w3.org/2000/svg" width="23" height="35" fill="none"><path fill="#fff" fill-rule="evenodd" d="M15.158 0v34.379h2.614V0h-2.614ZM.72 0v34.379h2.613V0H.719ZM20.056 0v34.379h2.614V0h-2.614ZM5.615 0v34.379H8.23V0H5.615Z" clip-rule="evenodd"/></svg>
+                </div>
+            </div>          -->
+        </div>
+        <div class="playlist">
+        <script id="entry-template" type="text/x-handlebars-template">
+            {{#tracks}}
+            <div class="playlist-item" data-artist="{{ArtistName}}" data-songTitle="{{songTitle}}" data-song="{{songlink}}" data-pic="{{ArtistImage}}">
+            <div class="flex inner-playlist-details">
+                <div>
+                    <h2>{{songTitle}}</h2>
+                    <h3>{{ArtistName}}</h3>
+                </div>
+                <div class="label label-playing none">
+                    Now Playing
+                </div>
+                <div class="label label-next none">
+                    Next Up
+                </div>
+            </div>
+            </div>
+            {{/tracks}}
+        </script>
+        </div>
+    </div>
+</body>
+<script type="module" src="main.js"></script>
+</html>
