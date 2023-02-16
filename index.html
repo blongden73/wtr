@@ -11,7 +11,9 @@
     <div class="flex player-wrapper">
         <div class="player-artist-details">
             <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="62" fill="none"><path fill="#fff" fill-rule="evenodd" d="M17.527 0v61.285h2.836V0h-2.836ZM32.123 57.616V19.978h-2.837v37.638h2.837ZM23.404 9.787v50.65h2.836V9.787h-2.836ZM35.164 30.544v20.802H38V30.544h-2.836ZM8.712 57.616V19.978H5.876v37.638h2.836ZM11.752 9.787v50.65h2.837V9.787h-2.837ZM0 30.544v20.802h2.836V30.544H0Z" clip-rule="evenodd"/></svg>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="38" height="62" fill="none"><path fill="#fff" fill-rule="evenodd" d="M17.527 0v61.285h2.836V0h-2.836ZM32.123 57.616V19.978h-2.837v37.638h2.837ZM23.404 9.787v50.65h2.836V9.787h-2.836ZM35.164 30.544v20.802H38V30.544h-2.836ZM8.712 57.616V19.978H5.876v37.638h2.836ZM11.752 9.787v50.65h2.837V9.787h-2.837ZM0 30.544v20.802h2.836V30.544H0Z" clip-rule="evenodd"/></svg> -->
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+                <lottie-player src="https://lottie.host/a54fa264-4981-4197-9828-575a7d5f0917/vWMZcT0lWH.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
             </div>
             <div class="player-track-info">
                 <h2 class="player-track-name"></h2>
@@ -20,13 +22,18 @@
                 </div>
             </div>
             
-            <img class="water-player-artist-image" src="wtr_holiding_image.jpg">
+            <!-- <img class="water-player-artist-image" src="wtr_holiding_image.jpg"> -->
+
+            <video playsinline autoplay loop muted class="water_intro_video">
+                <source src="water-streaming-reimagined.mp4" type="video/mp4">
+            </video>
 
             <div class="audio-player">
                 <div class="timeline">
                   <div class="progress"></div>
                 </div>
                 <div class="controls">
+                <div>
                   <div class="play-container">
                     <div class="toggle-play play">
                   </div>
@@ -36,6 +43,7 @@
                     <div class="divider">/</div>
                     <div class="length"></div>
                   </div>
+                </div>
                   <div class="volume-container">
                     <div class="volume-button">
                       <div class="volume icono-volumeMedium"></div>
@@ -64,26 +72,32 @@
             </div>          -->
         </div>
         <div class="playlist">
-        <script id="entry-template" type="text/x-handlebars-template">
-            {{#tracks}}
-            <div class="playlist-item" data-artist="{{ArtistName}}" data-songTitle="{{songTitle}}" data-song="{{songlink}}" data-pic="{{ArtistImage}}">
-            <div class="flex inner-playlist-details">
-                <div>
-                    <h2>{{songTitle}}</h2>
-                    <h3>{{ArtistName}}</h3>
-                </div>
-                <div class="label label-playing none">
-                    Now Playing
-                </div>
-                <div class="label label-next none">
-                    Next Up
-                </div>
+            <div class="playlist-wrapper">
+                <script id="entry-template" type="text/x-handlebars-template">
+                    {{#tracks}}
+                    <div class="playlist-item" data-artist="{{ArtistName}}" data-songTitle="{{songTitle}}" data-song="{{songlink}}" data-pic="{{ArtistImage}}">
+                    <div class="flex inner-playlist-details">
+                        <div>
+                            <h2>{{songTitle}}</h2>
+                            <h3>{{ArtistName}}</h3>
+                        </div>
+                        <div class="label label-playing none">
+                            Now Playing
+                        </div>
+                        <div class="label label-next none">
+                            Next Up
+                        </div>
+                    </div>
+                    </div>
+                    {{/tracks}}
+                </script>
             </div>
+            <div class="water-about-copy">
+                <h2>WTR FM is the future of streaming. The full version of WTR is coming soon, for now sit back and enjoy WTR FM radio.</h2>
+                <h2 class="about-copy-link"><a href="">Explore what's coming next</a></h2>
             </div>
-            {{/tracks}}
-        </script>
         </div>
     </div>
 </body>
-<script type="module" src="main.js"></script>
+<script type="module" src="./main.js"></script>
 </html>

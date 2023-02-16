@@ -78,8 +78,13 @@ h3 {
 .logo {
     position: absolute;
     top: 20px;
-    left: 20px;
     z-index: 100;
+}
+
+.water_intro_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .playlist {
@@ -146,7 +151,7 @@ h3 {
 
 .player-track-info {
     position: absolute;
-    bottom: 160px;
+    bottom: 124px;
     left: 20px;
     color: #fff;
 }
@@ -160,6 +165,29 @@ h3 {
 
 .play .label-playing {
     display: block;
+}
+
+.water-about-copy {
+    color: #fff;
+    position: absolute;
+    bottom: 60px;
+}
+
+.about-copy-link {
+    margin-top: 20px;
+}
+
+.about-copy-link a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.about-copy-link a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
 }
 
 

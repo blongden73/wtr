@@ -1,4 +1,4 @@
-import data from '/wtr/data/music.json' assert { type: 'json' };
+import data from 'wtr/data/music.json' assert { type: 'json' };
 console.log(data);
 
 var source = document.getElementById("entry-template").innerHTML;
@@ -6,7 +6,7 @@ var template = Handlebars.compile(source);
 var context = data;
 console.log(context);
 var html = template(context);
-var target = document.querySelector(".playlist");
+var target = document.querySelector(".playlist-wrapper");
 target.insertAdjacentHTML("beforeend", html);
 
 // var audioPlayer = document.querySelector('.water-audio-player');
@@ -52,6 +52,11 @@ console.log(firstTrack);
 let audio = new Audio(
     firstTrack
 );
+setTimeout(function(){
+    playerImage.setAttribute('src', data.tracks[0].ArtistImage);
+    playerTrackName.innerHTML = data.tracks[0].songTitle;
+    playerArtistName.innerHTML = data.tracks[0].ArtistName;
+}, 1000);
 //toggle between playing and pausing on button click
 const playBtn = audioPlayer.querySelector(".controls .toggle-play");
 console.dir(audio);
