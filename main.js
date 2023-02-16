@@ -1,4 +1,4 @@
-import data from '/data/music.json' assert { type: 'json' };
+import data from '/wtr/data/music.json' assert { type: 'json' };
 console.log(data);
 
 var source = document.getElementById("entry-template").innerHTML;
