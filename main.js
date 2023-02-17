@@ -26,6 +26,8 @@ getJSON('/wtr/data/music.json',  function(err, data) {
     if (err != null) {
         console.error(err);
     } else {
+
+      var trackNumber;
      
       var source = document.getElementById("entry-template").innerHTML;
       var template = Handlebars.compile(source);
@@ -48,12 +50,15 @@ getJSON('/wtr/data/music.json',  function(err, data) {
 
       const audioPlayer = document.querySelector(".audio-player");
       const firstTrack = data.tracks[0].songlink;
-
+      const firstTrackNumber = data.tracks[0].trackNum;
       console.log(firstTrack);
 
       let audio = new Audio(
           firstTrack
       );
+      
+      trackNumber = firstTrackNumber;
+
 
       setTimeout(function(){
           playerImage.setAttribute('src', data.tracks[0].ArtistImage);
@@ -91,6 +96,7 @@ getJSON('/wtr/data/music.json',  function(err, data) {
               playerImage.setAttribute('src', artistImage);
               playerTrackName.innerHTML = songTitle;
               playerArtistName.innerHTML = artistName;
+              trackNumber = 
 
               audio.addEventListener(
                   "loadeddata",
@@ -116,6 +122,32 @@ getJSON('/wtr/data/music.json',  function(err, data) {
         },
         false
       );
+
+      //playlist function
+      audio.addEventListener('ended', function(){
+        console.log('FINISHED');
+        trackNumber = trackNumber +1;
+        console.log(trackNumber);
+        console.log(playListItems.length)
+
+        if(trackNumber <= playListItems.length) {
+          playListItems.forEach(element =>{
+            element.classList.remove('play');
+            element.classList.add('not-playing');
+          })
+
+          audio = new Audio(
+            data.tracks[trackNumber].songlink
+          );
+          playListItems[trackNumber].classList.add('play');
+          playListItems[trackNumber].classList.remove('not-playing');
+          playerImage.setAttribute('src', data.tracks[trackNumber].ArtistImage);
+          playerTrackName.innerHTML = data.tracks[trackNumber].songTitle;
+          playerArtistName.innerHTML = data.tracks[trackNumber].ArtistName;
+
+          audio.play();
+        }
+      });
 
       //click on timeline to skip around
       const timeline = audioPlayer.querySelector(".timeline");
@@ -184,8 +216,6 @@ getJSON('/wtr/data/music.json',  function(err, data) {
           seconds % 60
         ).padStart(2, 0)}`;
       }
-
-
     }
 });
 
