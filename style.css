@@ -154,6 +154,7 @@ h3 {
     bottom: 124px;
     left: 20px;
     color: #fff;
+    z-index: 10;
 }
 
 .water-player-scrubber {
@@ -190,20 +191,37 @@ h3 {
     border-bottom: 1px solid #fff;
 }
 
+.water-player-artist-image {
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.water-player-artist-image.none {
+   opacity: 0;
+   visibility: hidden;
+}
+
 
 /* audio */
 
 .audio-player {
-    height: 50px;
+    height: 80px;
     width: 100%;
-    background: #444;
+    background: #000;
     box-shadow: 0 0 20px 0 #000a;
     font-family: arial;
     color: white;
     font-size: 0.75em;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 6px auto;
+    grid-template-rows: 3px auto;
     position: absolute;
     bottom: 0;
   }
@@ -231,25 +249,46 @@ h3 {
     justify-content: center;
     align-items: center;
   }
+  .audio-player .controls .toggle-play {
+    margin-bottom: 20px;
+  }
+
   .audio-player .controls .toggle-play.play {
     cursor: pointer;
     position: relative;
     left: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid #0000;
-    border-left: 13px solid white;
+    /* height: 0;
+    width: 0; */
+    /* border: 7px solid #0000;
+    border-left: 13px solid white; */
   }
   .audio-player .controls .toggle-play.play:hover {
     transform: scale(1.1);
   }
   .audio-player .controls .toggle-play.pause {
-    height: 15px;
-    width: 20px;
+    /* height: 15px;
+    width: 20px; */
     cursor: pointer;
     position: relative;
   }
-  .audio-player .controls .toggle-play.pause:before {
+
+  .toggle-play.play .pause-icon{
+    display: none;
+  }
+
+  .toggle-play.pause .pause-icon{
+    display: block;
+  }
+
+  .toggle-play.play .play-icon{
+    display: block;
+  }
+
+  .toggle-play.pause .play-icon{
+    display: none;
+  }
+
+  /* .audio-player .controls .toggle-play.pause:before {
     position: absolute;
     top: 0;
     left: 0px;
@@ -266,7 +305,7 @@ h3 {
     content: "";
     height: 15px;
     width: 3px;
-  }
+  } */
   .audio-player .controls .toggle-play.pause:hover {
     transform: scale(1.1);
   }
@@ -311,3 +350,46 @@ h3 {
     left: -123px;
     width: 120px;
   }
+
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .playlist {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .player-artist-details {
+        width: 100%;
+    }
+
+    .audio-player {
+        height: 300px;
+    }
+
+    .player-track-info {
+        bottom: 360px;
+    }
+
+    .audio-player .controls {
+        font-size: 24px;
+        align-self: center;
+    }
+
+    .volume-container {
+        display: none !important;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .play-control {
+        flex-direction: column;
+    }
+}
