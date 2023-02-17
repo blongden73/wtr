@@ -65,6 +65,7 @@ h3 {
 .player-artist-details {
     width: 50%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-color: #000;
     position: relative;
     overflow: hidden;
@@ -104,6 +105,7 @@ h3 {
 
 .player-wrapper {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .inner-playlist-details {
@@ -381,11 +383,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .audio-player {
-        height: 30vh;
+        height: 20vh;
     }
 
     .player-track-info {
-        bottom: 35vh;
+        bottom: 25vh;
     }
 
     .audio-player .controls {

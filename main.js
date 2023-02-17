@@ -1,6 +1,9 @@
 // import data from '/data/music.json' assert { type: 'json' };
 // console.log(data);
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 var getJSON = function(url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
