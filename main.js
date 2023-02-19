@@ -21,7 +21,7 @@ var getJSON = function(url, callback) {
   xhr.send();
 };
 
-getJSON('/wtr/data/music.json',  function(err, data) {
+getJSON('/data/music.json',  function(err, data) {
 
     if (err != null) {
         console.error(err);
