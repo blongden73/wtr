@@ -79,6 +79,22 @@
             "artist": "Kojey Radical"
           }
         ]
+      },
+      {
+        "songTitle":"Wake Up",
+        "ArtistName": "ft. Roses Gabor",
+        "CoverImage": "images/rosie_ga.jpeg",
+        "ArtistImage": "images/Roses+Gabor_DSTNGR.jpg",
+        "feature": "Kojey Radical",
+        "label": "Blacc House",
+        "songlink": "music/Wake_Up_v1_ft_Roses_Gabor.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
       }
     ]
   }

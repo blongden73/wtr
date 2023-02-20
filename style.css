@@ -167,8 +167,12 @@ h3 {
 .water-about-copy {
     color: #fff;
     position: absolute;
-    bottom: 60px;
+    bottom: 0;
+    padding-bottom: 60px;
     padding-right: 60px;
+    background: rgb(111,0,255);
+    background: linear-gradient(180deg, rgba(111,0,255,0) 0%, rgba(111,0,255,1) 15%);
+    padding-top: 60px;
 }
 
 .about-copy-link {
