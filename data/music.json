@@ -1,6 +1,22 @@
 {
     "tracks": [
       {
+        "songTitle":"Closer Than Close",
+        "ArtistName": "Rosie Gaines",
+        "CoverImage": "images/rosie.jpeg",
+        "ArtistImage": "images/rosie.jpeg",
+        "feature": "",
+        "label": "Motown / Blacc House",
+        "songlink": "music/Closer_Than_Close_Rosie_Gaines.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
         "songTitle":"Izit",
         "ArtistName": "Jelani Blackman",
         "CoverImage": "images/izit.jpeg",
@@ -17,14 +33,14 @@
         ]
       },
       {
-        "songTitle":"LV N ATTN",
-        "ArtistName": "Lojay",
-        "CoverImage": "images/lvnattn.jpeg",
-        "ArtistImage": "images/lojay.jpeg",
+        "songTitle":"Ferris Wheel",
+        "ArtistName": "ft. Ojerime",
+        "CoverImage": "images/ojepress-4.jpg",
+        "ArtistImage": "images/Ojerime.jpeg",
         "feature": "Kojey Radical",
-        "label": "18 Records / MNRK UK",
-        "songlink": "music/Lojay_Sarz_LV_N_ATTN_ft_Wizkid.mp3",
-        "trackNum" : 1,
+        "label": "Blacc House",
+        "songlink": "music/FERRIS_WHEEL_ft_Ojerime.mp3",
+        "trackNum" : 0,
         "metaData": [
           {
             "artist": "Jelani Blackman",
@@ -33,14 +49,30 @@
         ]
       },
       {
-        "songTitle":"Cash In Cash Out",
-        "ArtistName": "Pharrel Williams",
-        "CoverImage": "images/izit.jpeg",
-        "ArtistImage": "images/Pharrell-Williams-21-Savage-Tyler-the-Creator-Cash-In-Cash-Out.jpeg",
+        "songTitle":"Fun",
+        "ArtistName": "ft. Roses Gabor",
+        "CoverImage": "images/Roses+Gabor_DSTNGR.jpg",
+        "ArtistImage": "images/rosie_ga.jpeg",
         "feature": "Kojey Radical",
-        "label": "18 Records / MNRK UK",
-        "songlink": "music/Pharrell_Williams_Cash_In_Cash_Out.mp3",
-        "trackNum" : 3,
+        "label": "Blacc House",
+        "songlink": "music/FUN_ft_Roses_Gabor.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
+        "songTitle":"Weak",
+        "ArtistName": "ft. Kali Clare",
+        "CoverImage": "images/kc.png",
+        "ArtistImage": "images/KALICLAIRE_FRANKFIEBER_20200612_FRANKFIEBER_KALICLAIRE8779_HIRES-1.jpeg",
+        "feature": "Kojey Radical",
+        "label": "Blacc House",
+        "songlink": "music/WEAK_v_10000000_ft._Kali_Clare.mp3",
+        "trackNum" : 0,
         "metaData": [
           {
             "artist": "Jelani Blackman",
