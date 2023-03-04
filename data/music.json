@@ -1,13 +1,125 @@
 {
     "tracks": [
       {
+        "songTitle":"Asura & Indra",
+        "ArtistName": "Blanco, Sango",
+        "CoverImage": "images/Blanco_.jpg",
+        "ArtistImage": "images/Blanco_.jpg",
+        "feature": "Sango",
+        "label": "18 Records / MNRK UK",
+        "songlink": "Blanco-Asura & Indra.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
+        "songTitle":"WFM",
+        "ArtistName": "RealestK",
+        "CoverImage": "images/Realest K - WFM.jpeg",
+        "ArtistImage": "images/Realest K - WFM.jpeg",
+        "feature": "RealestK",
+        "label": "18 Records / MNRK UK",
+        "songlink": "RealestK-WFM.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
+        "songTitle":"Don't Be Afraid",
+        "ArtistName": "Knxwledge",
+        "CoverImage": "images/Knxwledge_5306_by_Jake_Michaels.jpg",
+        "ArtistImage": "images/Knxwledge_5306_by_Jake_Michaels.jpg",
+        "feature": "RealestK",
+        "label": "18 Records / MNRK UK",
+        "songlink": "Knxwledge - Don't Be Afraid.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
+        "songTitle":"Powder Blue",
+        "ArtistName": "Ty Dolla $ign",
+        "CoverImage": "images/Ty-Dolla-ign-Promo-1-Aug-2020-Credit-NABIL.jpg.webp",
+        "ArtistImage": "images/Ty-Dolla-ign-Promo-1-Aug-2020-Credit-NABIL.jpg.webp",
+        "feature": "RealestK",
+        "label": "18 Records / MNRK UK",
+        "songlink": "Ty Dolla $ign - Powder Blue.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
+        "songTitle":"Ting Tun Up",
+        "ArtistName": "Skiifall",
+        "CoverImage": "images/Skiifall-ting tun up.jpg",
+        "ArtistImage": "images/Skiifall-ting tun up.jpg",
+        "feature": "RealestK",
+        "label": "18 Records / MNRK UK",
+        "songlink": "Skiifall-Ting Tun Up.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
+        "songTitle":"She's Not In Love",
+        "ArtistName": "Beniflow",
+        "CoverImage": "images/benji_shes not in love.jpeg",
+        "ArtistImage": "images/benji_shes not in love.jpeg",
+        "feature": "RealestK",
+        "label": "18 Records / MNRK UK",
+        "songlink": "Beniflow-She's Not In Love.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
+        "songTitle":"pushin P",
+        "ArtistName": "Gunna & Future",
+        "CoverImage": "images/benji_shes not in love.jpeg",
+        "ArtistImage": "images/benji_shes not in love.jpeg",
+        "feature": "RealestK",
+        "label": "18 Records / MNRK UK",
+        "songlink": "Gunna & Future - pushin P.mp3",
+        "trackNum" : 0,
+        "metaData": [
+          {
+            "artist": "Jelani Blackman",
+            "artist": "Kojey Radical"
+          }
+        ]
+      },
+      {
         "songTitle":"Izit",
         "ArtistName": "Jelani Blackman",
         "CoverImage": "images/izit.jpeg",
         "ArtistImage": "images/jelani.jpeg",
         "feature": "Kojey Radical",
         "label": "18 Records / MNRK UK",
-        "songlink": "music/Jelani_Blackman_ft_Kojey_Radical_Izit.mp3",
+        "songlink": "Jelani_Blackman_ft_Kojey_Radical_Izit.mp3",
         "trackNum" : 0,
         "metaData": [
           {
