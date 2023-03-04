@@ -1,22 +1,6 @@
 {
     "tracks": [
       {
-        "songTitle":"Closer Than Close",
-        "ArtistName": "Rosie Gaines",
-        "CoverImage": "images/rosie.jpeg",
-        "ArtistImage": "images/rosie.jpeg",
-        "feature": "",
-        "label": "Motown / Blacc House",
-        "songlink": "music/Closer_Than_Close_Rosie_Gaines.mp3",
-        "trackNum" : 0,
-        "metaData": [
-          {
-            "artist": "Jelani Blackman",
-            "artist": "Kojey Radical"
-          }
-        ]
-      },
-      {
         "songTitle":"Izit",
         "ArtistName": "Jelani Blackman",
         "CoverImage": "images/izit.jpeg",
@@ -24,70 +8,6 @@
         "feature": "Kojey Radical",
         "label": "18 Records / MNRK UK",
         "songlink": "music/Jelani_Blackman_ft_Kojey_Radical_Izit.mp3",
-        "trackNum" : 0,
-        "metaData": [
-          {
-            "artist": "Jelani Blackman",
-            "artist": "Kojey Radical"
-          }
-        ]
-      },
-      {
-        "songTitle":"Ferris Wheel",
-        "ArtistName": "ft. Ojerime",
-        "CoverImage": "images/ojepress-4.jpg",
-        "ArtistImage": "images/Ojerime.jpeg",
-        "feature": "Kojey Radical",
-        "label": "Blacc House",
-        "songlink": "music/FERRIS_WHEEL_ft_Ojerime.mp3",
-        "trackNum" : 0,
-        "metaData": [
-          {
-            "artist": "Jelani Blackman",
-            "artist": "Kojey Radical"
-          }
-        ]
-      },
-      {
-        "songTitle":"Fun",
-        "ArtistName": "ft. Roses Gabor",
-        "CoverImage": "images/Roses+Gabor_DSTNGR.jpg",
-        "ArtistImage": "images/rosie_ga.jpeg",
-        "feature": "Kojey Radical",
-        "label": "Blacc House",
-        "songlink": "music/FUN_ft_Roses_Gabor.mp3",
-        "trackNum" : 0,
-        "metaData": [
-          {
-            "artist": "Jelani Blackman",
-            "artist": "Kojey Radical"
-          }
-        ]
-      },
-      {
-        "songTitle":"Weak",
-        "ArtistName": "ft. Kali Clare",
-        "CoverImage": "images/kc.png",
-        "ArtistImage": "images/KALICLAIRE_FRANKFIEBER_20200612_FRANKFIEBER_KALICLAIRE8779_HIRES-1.jpeg",
-        "feature": "Kojey Radical",
-        "label": "Blacc House",
-        "songlink": "music/WEAK_v_10000000_ft._Kali_Clare.mp3",
-        "trackNum" : 0,
-        "metaData": [
-          {
-            "artist": "Jelani Blackman",
-            "artist": "Kojey Radical"
-          }
-        ]
-      },
-      {
-        "songTitle":"Wake Up",
-        "ArtistName": "ft. Roses Gabor",
-        "CoverImage": "images/rosie_ga.jpeg",
-        "ArtistImage": "images/Roses+Gabor_DSTNGR.jpg",
-        "feature": "Kojey Radical",
-        "label": "Blacc House",
-        "songlink": "music/Wake_Up_v1_ft_Roses_Gabor.mp3",
         "trackNum" : 0,
         "metaData": [
           {
