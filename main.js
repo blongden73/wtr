@@ -49,7 +49,7 @@ getJSON('/data/music.json',  function(err, data) {
       // audio
 
       const audioPlayer = document.querySelector(".audio-player");
-      const firstTrack = data.tracks[0].songlink;
+      const firstTrack = 'music/' + data.tracks[0].songlink;
       const firstTrackNumber = data.tracks[0].trackNum;
       console.log(firstTrack);
 
