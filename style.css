@@ -373,6 +373,10 @@ h3 {
     margin-right: 20px;
   }
 
+  [data-form="65c3e240-ba0f-11ed-b928-613336e00160"] .emailoctopus-form input:not([type=submit]) {
+    color: #fff !important;
+  }
+
   /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
@@ -389,9 +393,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .playlist {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
     }
 
     .player-artist-details {
@@ -399,11 +400,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .audio-player {
-        height: 20vh;
+        height: 16vh;
     }
 
     .player-track-info {
-        bottom: 25vh;
+        bottom: 20vh;
+        left: 70px;
     }
 
     .audio-player .controls {
@@ -420,8 +422,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     .play-control {
-        flex-direction: column;
+        flex-direction: row;
         font-size: 40px;
+        justify-content: space-between !important;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .toggle-play {
+      margin-bottom: 0 !important;
     }
 
     .toggle-play svg {
@@ -431,5 +441,46 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .audio-player .controls .toggle-play {
       margin-bottom: 50px;
+    }
+
+    .playlist {
+      width: 100%;
+    }
+
+    .water-about-copy [data-form="65c3e240-ba0f-11ed-b928-613336e00160"].inline-container {
+      max-width: 100% !important;
+    }
+
+    .water-about-copy [data-form="65c3e240-ba0f-11ed-b928-613336e00160"] .form-container {
+      max-width: 100% !important;
+    }
+
+    [data-form="65c3e240-ba0f-11ed-b928-613336e00160"] .emailoctopus-form input:not([type=submit]) {
+      font-size: 30px !important;
+    }
+
+    [data-form="65c3e240-ba0f-11ed-b928-613336e00160"] .emailoctopus-form input[type=submit] {
+      ont-size: 30px !important;
+    }
+
+    lottie-player {
+      width: 160px !important;
+      height: 160px !important;
+    }
+    .player-wrapper {
+      height: auto !important;
+      flex-direction: column;
+    }
+    .playlist-wrapper {
+      height: auto;
+      width: 100%;
+    }
+    .water-about-copy {
+      position: relative;
+      width: 100%;;
+    }
+
+    .water-about-copy h4 {
+      margin-top: 30px;
     }
 }
